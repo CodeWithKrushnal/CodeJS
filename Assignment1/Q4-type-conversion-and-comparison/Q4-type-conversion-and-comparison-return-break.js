@@ -7,7 +7,7 @@ function checkNumbers() {
     }
 }
 
-console.log(checkNumbers());
+console.log(checkNumbers()); //Output: 0 1 2 3 4 Found 5, exiting the function.
 
 function checkNumbersWithBreak() {
     for (let i = 0; i < 10; i++) {
@@ -18,4 +18,4 @@ function checkNumbersWithBreak() {
     }
 }
 
-checkNumbersWithBreak();
+checkNumbersWithBreak(); //Output: 0 1 2 3 4 

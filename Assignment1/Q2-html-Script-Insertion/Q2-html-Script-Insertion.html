@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>HTML Insertion 2</title>
+    <script>
+        function alterMessageHead() {
+            document.getElementById("test").innerHTML = "Altered By headSection";
+        }
+    </script>
+</head>
+
+<body>
+    <script>
+        function alterMessageBody1() {
+            document.getElementById("test").innerHTML = "Altered By BodySection Declared Before the message";
+        }
+    </script>
+    <h1>HTML Insertion 2</h1>
+    <h1 id="test">Hello World!</h1>
+
+    <button onclick="alterMessageHead()">Activate Head</button>
+    <button onclick="alterMessageBody1()">Activate Body 1</button>
+    <button onclick="alterMessageBody2()">Activate Body 2</button>
+    <button onclick="alterMessageExternal()">Activate External</button>
+    <script>
+        function alterMessageBody2() {
+            document.getElementById("test").innerHTML = "Altered By BodySection Declared After the message";
+        }
+    </script>
+    <script src="Q2-html-Script-Insertion.html.js"></script>
+</body>
+
+</html>

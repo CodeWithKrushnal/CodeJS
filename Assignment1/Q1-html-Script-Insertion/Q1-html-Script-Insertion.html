@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+</head>
+
+<body style="font-family: Ubuntu,sans-serif;">
+    <h1 id="greeting" style="font-family:Ubuntu, sans-serif;">
+        Hello World !</h1>
+    <button onclick="clickMe()">
+        Click Me: This Button uses internal JS
+    </button>
+    <script>
+        function clickMe() {
+            alert("Hello World!");
+            document.getElementById("greeting").innerText = "You've Used Internal JS!";
+        }
+    </script>
+    <button onclick="clickMeExternal()">
+        Click Me: This Button uses external JS
+    </button>
+    <script src="Q1-html-Script-Insertion.js"></script>
+</body>
+
+</html>

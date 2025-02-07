@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Change Text using innerHTML</title>
+</head>
+
+<body style="font-family: 'Ubuntu', serif;">
+    <h1>
+        Hello World!.
+    </h1>
+    <p>
+        This is a simple paragraph #01.
+    </p>
+    <p>
+        This is a simple paragraph #02.
+    </p>
+    <button id="contentChnager" onclick="changeContent()">
+        Change Content
+    </button>
+    <script>
+        const elements =
+            document.querySelectorAll("p");
+        const buttonText = "How's the Josh?";
+
+        // Function to change content 
+        function changeContent() {
+            for (const element of elements) {
+                element.innerHTML = buttonText;
+            }
+        }
+    </script>
+</body>
+
+</html>

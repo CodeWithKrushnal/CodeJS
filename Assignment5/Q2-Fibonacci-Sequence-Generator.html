@@ -1,0 +1,40 @@
+<!DOCTYPE>
+<html>
+
+<head>
+    <title>
+        Fibonacci Sequence Generator
+    </title>
+</head>
+
+<body>
+    <center>
+        <br>
+        <h1>
+            Fibonacci Sequence Generator
+        </h1><br>
+        <h3>Click on the following button to generate the next value: <input type="button" onclick="output()"
+                value="Click Here">
+        </h3><br>
+        <h3 id="output">0, 1</h3>
+    </center>
+</body>
+
+<script>
+    var seed1 = 0
+    var seed2 = 1
+    function* fib() {
+        while (true) {
+            var temp = seed1 + seed2
+            seed1 = seed2
+            seed2 = temp
+            yield temp
+        }
+    }
+    function output() {
+        console.log(document.getElementById("output").innerText)
+        document.getElementById("output").innerText = document.getElementById("output").innerText + ", " + fib().next().value
+    }
+</script>
+
+</html>

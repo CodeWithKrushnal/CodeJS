@@ -19,39 +19,6 @@
         <h3 id="output"></h3>
     </center>
 </body>
-<script>
-    function memoize(fn) {
-        const cache = new Map();
-
-        return function (...args) {
-            // Convert arguments to a string to use as a key
-            const key = JSON.stringify(args);
-
-            // If the result is cached, return the cached value
-            if (cache.has(key)) {
-                console.log('Returning cached value for', args);
-                return cache.get(key);
-            }
-
-            // Otherwise, call the function and cache the result
-            const result = fn(...args);
-            cache.set(key, result);
-            return result;
-        };
-    }
-
-    // Example usage
-    const add = (a, b) => a + b;
-    const memoizedAdd = memoize(add);
-
-
-    function callfunc() {
-        console.log("function being called")
-        const num1 = Number(document.getElementById("num1").value)
-        const num2 = Number(document.getElementById("num2").value)
-        console.log("nums", typeof (num1), num2)
-        document.getElementById("output").innerText = "The Memoised addition of these numbers is: " + memoizedAdd(num1, num2)
-    }
-</script>
+<script src="Q1-Memoised-Function.js"></script>
 
 </html>

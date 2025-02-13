@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Table form API Call
+    </title>
+</head>
+
+<body style="font-family: Georgia, 'Times New Roman', Times, serif;">
+    <center>
+        <h1 id="pageHeading">Fetching the Data</h1>
+
+        <!-- Input for filtering/searching -->
+        <input type="text" id="searchInput" onkeyup="filterTable()" placeholder="Search by first name..."><br><br>
+
+        <div id="tableContainer"></div><br><br>
+        <button id="sortByName" onclick="sortByNamesNRender()">Sort By Name</button>
+    </center>
+</body>
+
+<script src="Q4-Table-From-API.js">
+</script>
+
+</html>

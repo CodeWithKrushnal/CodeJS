@@ -19,7 +19,7 @@ const obj = {
     a: "Apple",
     b: ["Basketball", "Baseball"],
     c: { call: "cellphone" },
-    d: "Dog"
+    d: "Dog"data.data.sort((a, b) => { return (a.first_name > b.first_name) ? 1 : ((b.first_name > a.first_name) ? -1 : 0) });
 };
 
 console.log(filterObj(obj));  // ['b','c']
